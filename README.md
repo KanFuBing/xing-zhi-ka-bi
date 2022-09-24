@@ -14,7 +14,7 @@
 
 ## 依赖的资源
 
-- 路径 [/painters.js](painters.js)，存储画师 Twitter Handle
-- 路径 [/quotes.js](quotes.js)，存储语录（含 `emptycard` URL）
+- 路径 [`/painters.js`](painters.js)，存储画师 Twitter Handle
+- 路径 [`/quotes.js`](quotes.js)，存储语录（含 `emptycard` URL）
 
 欢迎私信投稿。
