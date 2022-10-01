@@ -3,7 +3,10 @@ const Painters = [
     'ODK_YUK',
     'mk_yuyu',
     'nime_unime115',
-    'Suyasuyabi427'
+    'Suyasuyabi427',
+    'Senno0105',
+    '_MOFUPOYO_',
+    '330MAGUROnari'
 ]
 
 export default Painters
