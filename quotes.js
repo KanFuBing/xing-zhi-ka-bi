@@ -13,6 +13,7 @@ const Quotes = [
     '啵呦啵呦！\n（卡比）',
     'Poyo！\n（卡比）',
     '丝一喀！\n（卡比，索求西瓜中）',
+    '噢娅茨！\n（卡比，索求点心中）',
     'Zzz……\n（卡比，口翕张状）',
     '寂静的春天……\n（芙姆，第二十八话《可怕的 DDD 工厂》）',
     '还——还把眼睛贴紧电视！大人从来不吸取教训啊！\n（芙姆）',
@@ -21,7 +22,9 @@ const Quotes = [
     '出来吧，力量之星！\n（芙姆）',
     '我决不是最后的战士。新一代的星之战士，必然正在孕育。而我，将在见证那一刻之前，活下去——不可以不活下去。\n（梅塔骑士）',
     '和 DDD 一起？那我走了。\n（芙姆）',
-    '岂有此理。我是陛下最忠诚的幕僚。\n（梅塔骑士，第三话《什么？与梅塔骑士的决斗》）\nhttps://emptycard.deno.dev/?img=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fchuang-wai.appspot.com%2Fo%2F0.8766165820180611.png%3Falt%3Dmedia%26token%3D9d898302-d1f8-4df7-8a45-f0a0debec02f&redirect=https%3A%2F%2Fwww.bilibili.com%2Fbangumi%2Fplay%2Fep45879'
+    '岂有此理。我是陛下最忠诚的幕僚。\n（梅塔骑士，第三话《什么？与梅塔骑士的决斗》）\nhttps://emptycard.deno.dev/?img=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fchuang-wai.appspot.com%2Fo%2F0.8766165820180611.png%3Falt%3Dmedia%26token%3D9d898302-d1f8-4df7-8a45-f0a0debec02f&redirect=https%3A%2F%2Fwww.bilibili.com%2Fbangumi%2Fplay%2Fep45879',
+    '诸位，做好心理准备吧！我先告诉你们，我也要认真了！\n（梅塔骑士）',
+    '纵是敌人，我也向来公平。\n（梅塔骑士，第二话《什么？与梅塔骑士的决斗》）\nhttps://emptycard.deno.dev/?img=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fchuang-wai.appspot.com%2Fo%2F0.6217857921143368.png%3Falt%3Dmedia%26token%3D483ee96d-9684-46d1-857f-ca97431c50f1&redirect=https%3A%2F%2Fwww.bilibili.com%2Fbangumi%2Fplay%2Fep45784'
 ]
 
 export default Quotes

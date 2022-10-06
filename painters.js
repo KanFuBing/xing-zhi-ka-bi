@@ -6,7 +6,15 @@ const Painters = [
     'Suyasuyabi427',
     'Senno0105',
     '_MOFUPOYO_',
-    '330MAGUROnari'
+    '330MAGUROnari',
+    'Natsuring0',
+    'nt_suo7',
+    'raku_ura',
+    'smtm0106',
+    'aruco_coo',
+    'poyocla',
+    'Harukui_i',
+    'parasoruoishii',
 ]
 
 export default Painters
