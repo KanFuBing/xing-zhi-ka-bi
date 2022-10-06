@@ -48,6 +48,10 @@ const retweetPaintings = () => {
 
 // 定时执行发送语录和转推画作
 hourly(() => {
-    tweetQuote()
-    retweetPaintings()
+    Promise.all([
+        tweetQuote(),
+        retweetPaintings()
+    ]).then(() => {
+        fetch(Deno.env.get('HEARTBEAT_URL'))
+    })
 })

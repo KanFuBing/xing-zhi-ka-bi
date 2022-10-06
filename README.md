@@ -2,7 +2,7 @@
 
 ***欢迎来围观 [@xing_zhi_ka_bi](https://twitter.com/xing_zhi_ka_bi)。***
 
-> 使用 [`Deno`](https://deno) 与 [`Twitter API V1`](https://developer.twitter.com/en/docs/twitter-api/v1)。
+> 使用 [`Deno`](https://deno) 与 [`Twitter API V1`](https://developer.twitter.com/en/docs/twitter-api/v1)。整合了 `Better Uptime Heartbeat`，监测 bot 运行状态。
 > 
 > 基建：[`emptycard.deno.dev`](https://dash.deno.com/playground/emptycard)，根据请求 URL 中的 `redirect` 和 `img` 参数渲染 Twitter Card。
 
