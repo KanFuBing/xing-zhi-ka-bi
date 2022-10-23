@@ -1,13 +1,13 @@
-import Twitter from './twitter.js'
-import Quotes from './quotes.js'
-import Painters from './painters.js'
-import { hourly } from 'https://deno.land/x/deno_cron/cron.ts'
+import Twitter from './twitter.ts'
+import Quotes from './quotes.ts'
+import Painters from './painters.ts'
+import { hourly } from "https://deno.land/x/deno_cron@v1.0.0/cron.ts"
 
 const twitter = new Twitter({
-    consumerApiKey: Deno.env.get('API_KEY'),
-    consumerApiSecret: Deno.env.get('API_KEY_SECRET'),
-    accessToken: Deno.env.get('ACCESS_TOKEN'),
-    accessTokenSecret: Deno.env.get('ACCESS_TOKEN_SECRET'),
+    consumerApiKey: Deno.env.get('API_KEY') as string,
+    consumerApiSecret: Deno.env.get('API_KEY_SECRET') as string,
+    accessToken: Deno.env.get('ACCESS_TOKEN') as string,
+    accessTokenSecret: Deno.env.get('ACCESS_TOKEN_SECRET') as string,
 })
 
 // 语录发送
@@ -38,9 +38,9 @@ const tweetQuote = () => {
 // 转推画作
 const retweetPaintings = () => {
     Painters.forEach(async (painter) => {
-        const tweets = await twitter.getUserLatestTweet(painter, 5)
-        const paitings = tweets.filter(tweet => tweet.entities.media && tweet.favorite_count > 100)
-        paitings.forEach(tweet => {
+        const tweets = await twitter.getUserLatestTweet(painter, 5) ?? []
+        const paitings = tweets.filter((tweet: { entities: { media: string }, favorite_count: number }) => tweet.entities.media && tweet.favorite_count > 100)
+        paitings.forEach((tweet: { id_str: string }) => {
             twitter.retweet(tweet.id_str)
         })
     })
@@ -52,6 +52,6 @@ hourly(() => {
         tweetQuote(),
         retweetPaintings()
     ]).then(() => {
-        fetch(Deno.env.get('HEARTBEAT_URL'))
+        fetch(Deno.env.get('HEARTBEAT_URL') as string)
     })
 })
